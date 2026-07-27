@@ -517,7 +517,7 @@ footer.site-footer { background: var(--navy-dark); color: rgba(255,255,255,0.7);
   .floating-btn { display: flex; }
   .stat-strip { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: auto; padding: 130px 0 70px; }
-  .top-bar .container { justify-content: center; text-align: center; }
+  .top-bar { display: none; }
 }
 
 @media print {
