@@ -27,6 +27,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+html, body { max-width: 100%; overflow-x: hidden; }
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -500,8 +501,8 @@ footer.site-footer { background: var(--navy-dark); color: rgba(255,255,255,0.7);
   .job-card .job-cols { grid-template-columns: 1fr; }
 }
 @media (max-width: 1180px) {
-  .main-nav { position: fixed; top: 0; right: -100%; width: min(340px, 86vw); height: 100vh; background: var(--white); flex-direction: column; align-items: stretch; padding: 90px 26px 26px; box-shadow: var(--shadow-lg); transition: right 0.3s ease; overflow-y: auto; }
-  .main-nav.open { right: 0; }
+  .main-nav { position: fixed; top: 0; right: 0; width: min(340px, 86vw); height: 100vh; background: var(--white); flex-direction: column; align-items: stretch; padding: 90px 26px 26px; box-shadow: var(--shadow-lg); transform: translateX(100%); transition: transform 0.3s ease; overflow-y: auto; }
+  .main-nav.open { transform: translateX(0); }
   .main-nav > ul { flex-direction: column; align-items: stretch; gap: 2px; }
   .has-dropdown .dropdown { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; display: none; padding-left: 10px; }
   .has-dropdown.open .dropdown { display: block; }
