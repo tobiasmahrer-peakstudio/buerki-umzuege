@@ -499,22 +499,24 @@ footer.site-footer { background: var(--navy-dark); color: rgba(255,255,255,0.7);
   .hero-stats { grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
   .job-card .job-cols { grid-template-columns: 1fr; }
 }
-@media (max-width: 760px) {
-  section { padding: 58px 0; }
+@media (max-width: 1180px) {
   .main-nav { position: fixed; top: 0; right: -100%; width: min(340px, 86vw); height: 100vh; background: var(--white); flex-direction: column; align-items: stretch; padding: 90px 26px 26px; box-shadow: var(--shadow-lg); transition: right 0.3s ease; overflow-y: auto; }
   .main-nav.open { right: 0; }
   .main-nav > ul { flex-direction: column; align-items: stretch; gap: 2px; }
   .has-dropdown .dropdown { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; display: none; padding-left: 10px; }
   .has-dropdown.open .dropdown { display: block; }
-  .header-cta .btn span.long { display: none; }
+  .header-cta .btn-whatsapp, .header-cta .btn-ghost { display: none; }
   .nav-toggle { display: flex; }
+  .floating-btn { display: flex; }
+}
+@media (max-width: 760px) {
+  section { padding: 58px 0; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .cta-banner { flex-direction: column; text-align: center; padding: 38px 26px; }
   .cta-actions { justify-content: center; }
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
   .footer-bottom { flex-direction: column; text-align: center; }
-  .floating-btn { display: flex; }
   .stat-strip { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: auto; padding: 130px 0 70px; }
   .top-bar { display: none; }
