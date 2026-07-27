@@ -17,7 +17,6 @@
   };
 
   const nav = [
-    { href: "index.html", label: "Start", key: "start" },
     { href: "ueber-uns.html", label: "Über uns", key: "ueber-uns" },
     {
       href: "angebot.html", label: "Angebot", key: "angebot",
